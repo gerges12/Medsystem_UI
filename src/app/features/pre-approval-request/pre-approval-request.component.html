@@ -1,0 +1,16 @@
+<div class="pre-approval-request">
+    <h2>طلب موافقة مسبقة</h2>
+    
+    <form (ngSubmit)="submitRequest()">
+      <label for="requestType">نوع الطلب:</label>
+      <select id="requestType" [(ngModel)]="selectedRequestType" name="requestType" required>
+        <option *ngFor="let type of requestTypes" [value]="type">{{ type }}</option>
+      </select>
+  
+      <label for="description">وصف الطلب:</label>
+      <textarea id="description" [(ngModel)]="description" name="description" rows="4" required></textarea>
+  
+      <button type="submit">إرسال الطلب</button>
+    </form>
+  </div>
+  

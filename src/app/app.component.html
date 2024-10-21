@@ -1,0 +1,52 @@
+<!-- <div class="container" style="display: flex; flex-direction: column; height: 100vh;">
+  <div class="header" style="display: flex; justify-content: space-between; align-items: center; background-color: #007bff; color: white; padding: 10px 20px; height: 40px;">
+    <div class="username" style="font-size: 18px; font-weight: bold;">gerges said</div>
+    <h1 class="title" style="height: 30px; font-size: 23px; font-weight: bold;">نظام تأمين طبي</h1>
+    <div class="logout" (click)="logout()" style="cursor: pointer; background-color: #e74c3c; padding: 8px 12px; border-radius: 5px; transition: background-color 0.3s;">تسجيل الخروج</div>
+  </div>
+
+  <div class="main-layout" style="display: flex;">
+    <div class="sidebar" style="width: 250px; background-color: #2c3e50; color: white; padding: 15px; border-right: 1px solid #34495e; flex-shrink: 0;">
+      <h3 style="margin: 0 0 15px; color: #ecf0f1;">القائمة</h3>
+      <ul style="list-style-type: none; padding: 0;">
+        <li>
+          <div (click)="toggleSubmenu('profileSubmenu')" class="menu-item" style="cursor: pointer; padding: 10px; background-color: #34495e; border-radius: 5px; margin: 5px 0; transition: background-color 0.3s;">الملف الشخصي</div>
+          <ul [ngClass]="{'active': profileSubmenu}" style="list-style-type: none; padding-left: 15px; display: none;">
+            <li (click)="navigateTo('profile/user-details')" style="cursor: pointer; padding: 5px; background-color: #2980b9; border-radius: 5px; margin: 3px 0;">تفاصيل المستخدم</li>
+            <li (click)="navigateTo('profile/account-settings')" style="cursor: pointer; padding: 5px; background-color: #2980b9; border-radius: 5px; margin: 3px 0;">إعدادات الحساب</li>
+            <li (click)="navigateTo('profile/change-password')" style="cursor: pointer; padding: 5px; background-color: #2980b9; border-radius: 5px; margin: 3px 0;">تغيير كلمة المرور</li>
+          </ul>
+        </li>
+        <li>
+          <div (click)="toggleSubmenu('claimsSubmenu')" class="menu-item" style="cursor: pointer; padding: 10px; background-color: #34495e; border-radius: 5px; margin: 5px 0; transition: background-color 0.3s;">المطالبات</div>
+          <ul [ngClass]="{'active': claimsSubmenu}" style="list-style-type: none; padding-left: 15px; display: none;">
+            <li (click)="navigateTo('pre-approval-request')" style="cursor: pointer; padding: 5px; background-color: #2980b9; border-radius: 5px; margin: 3px 0;">تقديم مطالبة جديدة</li>
+            <li (click)="navigateTo('claims/status')" style="cursor: pointer; padding: 5px; background-color: #2980b9; border-radius: 5px; margin: 3px 0;">عرض حالة المطالبات</li>
+            <li (click)="navigateTo('claims/history')" style="cursor: pointer; padding: 5px; background-color: #2980b9; border-radius: 5px; margin: 3px 0;">تاريخ المطالبات</li>
+          </ul>
+        </li>
+        <li>
+          <div (click)="toggleSubmenu('policiesSubmenu')" class="menu-item" style="cursor: pointer; padding: 10px; background-color: #34495e; border-radius: 5px; margin: 5px 0; transition: background-color 0.3s;">السياسات</div>
+          <ul [ngClass]="{'active': policiesSubmenu}" style="list-style-type: none; padding-left: 15px; display: none;">
+            <li (click)="navigateTo('policies/view')" style="cursor: pointer; padding: 5px; background-color: #2980b9; border-radius: 5px; margin: 3px 0;">عرض السياسات</li>
+            <li (click)="navigateTo('policies/edit')" style="cursor: pointer; padding: 5px; background-color: #2980b9; border-radius: 5px; margin: 3px 0;">تعديل السياسة</li>
+            <li (click)="navigateTo('policies/add')" style="cursor: pointer; padding: 5px; background-color: #2980b9; border-radius: 5px; margin: 3px 0;">إضافة سياسة جديدة</li>
+          </ul>
+        </li>
+        <li>
+          <div (click)="toggleSubmenu('supportSubmenu')" class="menu-item" style="cursor: pointer; padding: 10px; background-color: #34495e; border-radius: 5px; margin: 5px 0; transition: background-color 0.3s;">الدعم</div>
+          <ul [ngClass]="{'active': supportSubmenu}" style="list-style-type: none; padding-left: 15px; display: none;">
+            <li (click)="navigateTo('support/help-center')" style="cursor: pointer; padding: 5px; background-color: #2980b9; border-radius: 5px; margin: 3px 0;">مركز المساعدة</li>
+            <li (click)="navigateTo('support/contact')" style="cursor: pointer; padding: 5px; background-color: #2980b9; border-radius: 5px; margin: 3px 0;">التواصل مع الدعم</li>
+            <li (click)="navigateTo('support/faqs')" style="cursor: pointer; padding: 5px; background-color: #2980b9; border-radius: 5px; margin: 3px 0;">الأسئلة الشائعة</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content" style="flex: 1; padding: 20px; background-color: #ecf0f1;">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div> -->
+<router-outlet></router-outlet>

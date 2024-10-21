@@ -1,0 +1,95 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between; /* توزيع العناصر بالتساوي */
+    align-items: center; /* محاذاة العناصر بشكل مركزي عموديًا */
+    background-color: #007bff; /* لون الخلفية */
+    color: white; /* لون النص */
+    padding: 10px 20px; /* المسافة حول النص */
+    height: 40px; /* ارتفاع ثابت */
+  }
+  .username {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .logout {
+    cursor: pointer;
+    background-color: #e74c3c;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .logout:hover {
+    background-color: #c0392b; /* لون عند التمرير */
+  }
+  
+  .main-layout {
+    display: flex; /* إضافة Flexbox */
+  }
+  .sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    border-right: 1px solid #34495e;
+    flex-shrink: 0;
+  }
+  
+  .sidebar h3 {
+    margin: 0 0 15px;
+    color: #ecf0f1;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #34495e;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-item:hover {
+    background-color: #1abc9c; /* لون عند التمرير */
+  }
+  
+  .sidebar li ul {
+    list-style-type: none;
+    padding-left: 15px;
+    display: none; /* إخفاء القوائم الفرعية افتراضيًا */
+  }
+  
+  .sidebar li ul.active {
+    display: block; /* عرض القوائم الفرعية عند النقر */
+  }
+  
+  .sidebar li ul li {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #2980b9;
+    border-radius: 5px;
+    margin: 3px 0;
+  }
+  
+  .sidebar li ul li:hover {
+    background-color: #3498db; /* لون عند التمرير */
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ecf0f1; /* لون خلفية محتوى الصفحة */
+  }
+  

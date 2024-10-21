@@ -1,0 +1,54 @@
+<div class="flex justify-content-center align-items-center min-h-screen">
+  <p-card header=" medical system" [style]="{ width: '400px' }">
+    <div class="header-logo">
+      <img src="assets/images/medical-logo.jpg" alt="Medical System Logo" style="width: 360px; height: 150px; margin-right: 10px;" />
+      <!-- <span>Login to medical system</span> -->
+    </div>
+    <form #loginForm="ngForm" (ngSubmit)="onLogin()">
+      <div class="field">
+        <label for="email">User Name</label>
+        <input
+          type="text"
+          pInputText
+          [(ngModel)]="login.username"
+          class="w-full"
+          id="email"
+          name="email"
+          #email="ngModel"
+          required
+        />
+        <small *ngIf="email.invalid && (email.dirty || email.touched)" class="block p-error">
+          <span *ngIf="email.hasError('required')">Email is required</span>
+          <span *ngIf="email.hasError('pattern')">Email is invalid</span>
+        </small>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <p-password
+          [(ngModel)]="login.password"
+          [feedback]="false"
+          [toggleMask]="true"
+          inputId="password"
+          name="password"
+          #password="ngModel"
+          inputStyleClass="w-full"
+          styleClass="w-full"
+          required
+        ></p-password>
+        <small *ngIf="password.invalid && (password.dirty || password.touched)" class="block p-error">
+          Password is required
+        </small>
+      </div>
+      <p-button
+        label="SIGN IN"
+        styleClass="w-full"
+        [disabled]="loginForm.invalid"
+        type="submit"
+      ></p-button>
+      <div class="mt-2">
+        Not a member? <a routerLink="/register">Register</a>
+      </div>
+    </form>
+  </p-card>
+  
+</div>
